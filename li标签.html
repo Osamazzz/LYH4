@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+#ul1{
+    list-style: none;
+}
+    </style>
+</head>
+<body>       
+    <ul id="ul1">
+        <li>我是li标签1</li>
+        <li>我是li标签2</li>
+        <li>我是li标签3</li>
+        <li>我是li标签4</li>
+        <li>我是li标签5</li>
+    </ul>
+</body>
+<script>
+    var lis = document.querySelectorAll("li");
+    for(var i = 0;i < 5;i++){
+    if(i % 2!=0){
+        lis[i].style.color="green";
+    }else{
+        lis[i].style.color="red";
+    }
+}
+var list=document.getElementById('ul1').children;//获取所有的li标签
+   for(var i=0;i<list.length;i++){               //经过每一个li标签
+   list[i].addEventListener('click',showlist)
+};
+   function showlist(a){
+       var b=a.target;
+       alert("嗨！"+b.innerHTML)
+   }
+</script>
+</html>

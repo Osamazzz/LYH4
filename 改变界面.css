@@ -1,0 +1,36 @@
+.content1{
+    background: pink;        
+    width: 100px;        
+    height: 100px;
+    margin: auto;
+    text-align: center;    
+}
+.content-active{
+    background: red;        
+    width: 100px;        
+    height: 100px;
+    margin: auto;
+    text-align: center;  
+}
+.content2{
+    
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin: auto;
+}
+.headline{
+    text-align: center;
+    list-style: none;
+}
+.Poetry{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.NewPoetry{
+    font-size: 20px ;
+}
+.new{
+    background-color: burlywood;
+}
